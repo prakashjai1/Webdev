@@ -1,0 +1,1202 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Kannada', sans-serif;
+}
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.mybutton{
+    background-color: rgb(201, 12, 12);
+    color: #fff;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 20px;
+}
+/* Header Start */
+header{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 2;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding: 5px 0 20px 0;
+}
+
+/* Navigation */
+header nav{
+    width: 85%;
+    margin: 0 auto;
+    padding: 18px 0 0 0;
+}
+header nav .brand{
+    float: left;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-top: -6px;
+    color: #000;
+}
+header nav .brand span{
+    font-size: 0.3rem;
+    color: rgb(201, 12, 12);
+}
+header nav ul{
+    float: left;
+    margin-left: 6%;
+    margin-top: 10px;
+}
+header nav ul li{
+    display: inline-block;
+    margin-left: 25px;
+}
+header nav ul .border-hover::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: rgb(201, 12, 12);
+    transition: width .3s;
+}
+header nav ul li a{
+    color: gray;
+    font-size: 1rem;
+    transition: all 1s;
+    font-weight: 700;
+}
+header nav ul #home{
+    border-bottom: 2px solid rgb(201, 12, 12);
+    border-width: 100%;
+}
+header nav ul #home a{
+    color: #000;
+}
+header nav ul .border-hover:hover::after{
+    width: 100%;
+}
+header nav ul li a:hover{
+    color: #000;
+}
+/* sub-menu */
+header nav ul li .main-menu .sub-menu{
+    width: 12%;
+    margin-top: 5px;
+    margin-left: 0px;
+    background-color: #fff;
+    position: absolute;
+    padding: 10px 50px;
+    transition: all 0.5s;
+    z-index: 15;
+    box-shadow: 0 0 10px 0 gray;
+}
+header nav ul li .main-menu ul{
+    display: none;
+}
+header nav ul li:hover .main-menu ul{
+    display: block;
+}
+header nav ul li .main-menu .sub-menu li{
+    line-height: 45px;
+    margin-left: -20px;
+}
+
+header nav ul li .sub-menu a:hover{
+    color: rgb(201, 12, 12);    
+}
+/* sub-menu */
+
+/* sub-menu2 */
+header nav ul li .main-menu .sub-menu .main-sub-menu .sub-menu2{
+    width: 60%;
+    margin-top: -45px;
+    margin-left: -109%;
+    background-color: #fff;
+    position: absolute;
+    padding: 10px 50px;
+    transition: all 0.5s;
+    z-index: 20;
+    box-shadow: 0 0 10px 0 gray;
+}
+header nav ul li .main-menu li .main-sub-menu ul{
+    display: none;
+}
+header nav ul li .main-menu li:hover .main-sub-menu ul{
+    display: block;
+}
+
+header nav ul li .sub-menu li{
+    display: block;
+    line-height: 45px;
+    margin-left: -20px;
+}
+header nav ul li :hover ~.sub-menu{
+    display: block;
+}
+/* sub-menu2 */
+/* Navigation */
+header nav button{
+    float: right;
+    transition: all 0.5s;
+}
+header nav button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Toggle nav  */
+header nav .toggle-nav{
+    width: 10%;
+    float: left;
+    display: none;
+}
+header nav .toggle-nav{
+    font-size: 1.5rem;
+    color: #555454;
+}
+header nav .toggle-nav .fa-navicon:hover{
+    cursor: pointer;
+}
+header nav .fa-close{
+    z-index: 20;
+    position: absolute;
+    display: none;
+    margin-left: 80%;
+    font-size: 1.5rem;
+}
+header nav .fa-close:hover{
+    cursor: pointer;
+}
+/* Toggle nav  */
+
+/* Header End */
+
+/* Home Start */
+.home{
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    padding:50px 0 50px 0;
+    
+}
+.home .two-part{
+    width: 85%;
+    margin: 0 auto;
+}
+.home .two-part .home-part-1,
+.home .two-part .home-part-2{
+    width: 45%;
+    float: left;
+}
+.home .two-part .home-part-1 h1{
+    font-size: 2.5rem;
+    font-family: 'Kalam', cursive;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-top: 150px;
+    color: #2d2d2d;
+}
+.home .two-part .home-part-1 p{
+    font-size: 1rem;
+    color: gray;
+    line-height: 25px;
+}
+.home .two-part .home-part-1 button{
+    padding: 15px 40px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+.home .two-part .home-part-1 button:hover{
+    box-shadow: 0 0 5px 0 rgb(201, 12, 12);
+    transition: all 0.5s;
+    opacity: 0.9;
+}
+.home .two-part .home-part-1 a{
+    margin-left: 30px;
+    color: #2d2d2d;
+    font-size: 1.2rem;
+}
+.home .two-part .home-part-1 .fa-play{
+    color: rgb(201, 12, 12);
+    border: 2px solid rgb(201, 12, 12);
+    border-radius: 100%;
+    padding: 8px 10px 8px 10px;
+    margin-right: 10px;
+}
+.home .two-part .home-part-1 a:hover{
+    color: rgb(201, 12, 12);
+}
+.home .two-part .home-part-2{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    
+}
+.home .two-part .home-part-2 img{
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 180px;
+}
+/* Home End */
+
+/* About Start */
+.about{
+    width: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.about-center{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.about .about-center h6{
+    text-align: center;
+    color: gray;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.about .about-center h6+h1{
+    text-align: center;
+    font-size: 1.8rem;
+    margin: -30px 0;
+    color: #2d2d2d;
+    letter-spacing: 2px;
+    font-family: 'Kalam', cursive;
+    font-weight: 300;
+}
+.about .about-center h6+h1 span{
+    color: rgb(201, 12, 12);
+}
+.about .about-center .about-twopart{
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 0 100px 0;
+}
+.about .about-center .about-twopart .one{
+    width: 50%;
+    float: left;
+    background-image: url("../images/about.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 566px;
+}
+.about .about-center .about-twopart .one .white-box{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    top: 450px;
+}
+.about .about-center .about-twopart .one .white-box h2{
+    color: #2d2d2d;
+    letter-spacing: 1px;
+    padding-top: 25px;
+}
+.about .about-center .about-twopart .one .white-box h1{
+    color: rgb(201, 12, 12);
+    font-size: 2rem;
+    margin-top: -10px;
+    padding-bottom: 25px;
+}
+.about .about-center .about-twopart .two{
+ width: 45%;
+ float: right;   
+}
+.about .about-center .about-twopart .two .bi-check2-all{
+    color: rgb(231, 18, 18);
+    float: left;
+}
+.about .about-center .about-twopart .two p{
+    color: #2d2d2d;
+    line-height: 25px;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+.about .about-center .about-twopart .two .para-1{
+    margin-top: 0px;
+}
+.about .about-center .about-twopart .two .para-2,
+.about .about-center .about-twopart .two .para-3,
+.about .about-center .about-twopart .two .para-4{
+    padding-left: 25px;
+    margin-top: -5px;
+}
+.about .about-center .about-twopart .two img{
+    width: 100%;
+    position: relative;
+    top:62px;
+}
+.about .about-center .about-twopart .two a{
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 100%;
+    background-color: rgb(201, 12, 12);
+    padding: 20px 25px 20px 25px;
+    z-index: 1;
+    position: relative;
+    top: -150px;
+    left: 220px;
+    box-shadow: 0px 0px 20px 10px rgb(201, 12, 12);
+}
+.about .about-center .about-twopart .two a .fa-play{
+    transition: all .2s;
+}
+.about .about-center .about-twopart .two a:hover .fa-play{
+    transform: scale(3);
+}
+/* About End */
+
+/* Why Choose Yummy Section Start */
+.choose{
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    padding: 80px 0 80px 0;
+}
+.choose-center{
+    width: 85%;
+    margin: 0 auto;
+}
+.choose .choose-center .one{
+    width: 28%;
+    float: left;
+    background-color: rgb(201, 12, 12);
+    margin-right: 30px;
+    padding: 0 0px 10px 0px;
+    color: #fff;
+}
+.choose .choose-center .two,
+.choose .choose-center .three,
+.choose .choose-center .four{
+    width: 20%;
+    float: left;
+    background-color: #fff;
+    padding: 50px 0 50px 0;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+.choose .choose-center .two:hover,
+.choose .choose-center .three:hover,
+.choose .choose-center .four:hover{
+    transform: scale(1.1);
+}
+.choose .choose-center .two,
+.choose .choose-center .three{
+    margin-right: 30px;
+}
+.choose .choose-center .three{
+    padding-bottom: 80px;
+}
+
+.choose .choose-center .one h1{
+    font-size: 2rem;
+    padding: 0 10px 0 30px;
+}
+.choose .choose-center .one p{
+    font-size: 1rem;
+    line-height: 25px;
+    padding: 0 10px 0 30px;
+}
+.choose .choose-center .one button{
+    background-color: rgba(228, 228, 228, 0.329);
+    margin-left: 25%;
+    padding: 10px 35px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.choose .choose-center .two span,
+.choose .choose-center .three span,
+.choose .choose-center .four span{
+    background-color: rgba(230, 181, 181, 0.753);
+    border-radius: 100%;
+    font-size: 2rem;
+    color: rgb(201, 12, 12);
+    padding: 15px 15px;
+}
+.choose .choose-center .two h2,
+.choose .choose-center .three h2,
+.choose .choose-center .four h2{
+    color: #2d2d2d;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 0 30px 0 30px;
+    margin-top: 45px;
+}
+.choose .choose-center .two p,
+.choose .choose-center .three p,
+.choose .choose-center .four p{
+    color: gray;
+    padding: 0 30px 0 30px;
+    line-height: 25px;
+}
+/* Why Choose Yummy Section End */
+
+/* Some Details Start */
+.details{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/stats-bg.jpg");
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0 80px 0;
+}
+.details-center{
+    width: 75%;
+    margin: 0 auto;
+}
+.details .details-center .one,
+.details .details-center .two,
+.details .details-center .three,
+.details .details-center .four{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.details .details-center .one h1,
+.details .details-center .two h1,
+.details .details-center .three h1,
+.details .details-center .four h1{
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: -15px;
+}
+.details .details-center .one h4,
+.details .details-center .two h4,
+.details .details-center .three h4,
+.details .details-center .four h4{
+    color: lightgray;
+    font-size: 1rem;
+}
+/* Some Details End */
+
+/* Menu Start */
+.menu{
+    width: 100%;
+    padding-bottom: 50px;
+}
+.menu-center{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+.menu .menu-center h6{
+    color: gray;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    margin-top: 80px;
+}
+.menu .menu-center h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #2d2d2d;
+    margin-top: -25px;
+    font-family: 'Kalam', cursive;
+}
+.menu .menu-center h1 span{
+    color: rgb(201, 12, 12);
+}
+.menu .menu-center a{
+    color:  #2d2d2d;
+    font-size: 1.5rem;
+    border-bottom: 2px solid gray;
+    padding: 0 5px 10px 5px;
+    cursor: pointer;
+}
+.menu .menu-center #starters{
+    border-bottom-color: rgb(201, 12, 12);
+}
+.menu .menu-center a:hover{
+    color: rgb(201, 12, 12);
+}
+.menu .menu-center .mrg-right{
+    margin-right: 20px;
+}
+.menu .menu-center h2{
+    margin-top: -30px;
+    font-size: 2.5rem;
+    color: rgb(201, 12, 12);
+}
+.menu .menu-center .menu-items-2,
+.menu .menu-center .menu-items-3,
+.menu .menu-center .menu-items-4{
+   display: none;
+   transition: all 0.5s;
+}
+.menu .menu-center .one,
+.menu .menu-center .two,
+.menu .menu-center .three{
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+.menu .menu-center .one,
+.menu .menu-center .two{
+    margin-right: 30px;
+}
+.menu .menu-center .one img,
+.menu .menu-center .two img,
+.menu .menu-center .three img{
+    width: 70%;
+}
+
+.menu .menu-center .one h3,
+.menu .menu-center .two h3,
+.menu .menu-center .three h3{
+    color: #2d2d2d;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.menu .menu-center .one p,
+.menu .menu-center .two p,
+.menu .menu-center .three p{
+    color: gray;
+    margin-top: -15px;
+    margin-bottom: 40px;
+}
+.menu .menu-center .one h2,
+.menu .menu-center .two h2,
+.menu .menu-center .three h2{
+    font-size: 1.5rem;
+}
+/* Menu End */
+
+/* Testimonials Start */
+.testimonials{
+    width: 100%;
+    background-color: rgba(228, 228, 228, 0.329);
+}
+.testimonials .testimonials-center{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 0 90px 0;
+}
+.testimonials .testimonials-center h5{
+    font-weight: 300;
+    color: gray;
+    letter-spacing: 1px;
+}
+.testimonials .testimonials-center h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #2d2d2d;
+    font-family: 'Kalam', cursive;
+    margin: 0;
+}
+.testimonials .testimonials-center h1 span{
+    color: rgb(201, 12, 12);
+}
+
+.testimonials .testimonials-center .testimonials-item .item{
+    width: 100%;
+    text-align: left;
+}
+.testimonials .testimonials-center .testimonials-item .item{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.testimonials .testimonials-center .testimonials-item .item .part-one{
+    float: left;
+    width: 70%;
+    margin-right: 30px;
+    border-left: 3px solid rgb(201, 12, 12);
+    padding-left: 30px;
+}
+.testimonials .testimonials-center .testimonials-item .item .part-two{
+    float: left;
+    width: 20%;
+}
+.testimonials .testimonials-center .testimonials-item .item .part-two img{
+    width: 100%;
+    border-radius: 100%;
+    border: 5px solid #fff;
+}
+.testimonials .testimonials-center .testimonials-item .item .part-one p{
+    color: #2d2d2d;
+    line-height: 25px;
+}
+.testimonials .testimonials-center .testimonials-item .item .part-one .fa-quote-left{
+    color: rgb(196, 97, 97);
+    padding-right: 10px;
+}
+.testimonials .testimonials-center .testimonials-item .item .part-one .fa-quote-right{
+    color: rgb(196, 97, 97);
+    padding-left: 10px;
+}
+.testimonials .testimonials-center .testimonials-item .item .part-one h1{
+    color: #2d2d2d;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: -5px;
+}
+.testimonials .testimonials-center .testimonials-item .item .part-one h1+p{
+    color: gray;
+    margin-top: 5px;
+}
+.testimonials .testimonials-center .testimonials-item .item .part-one .fa-star{
+    color: orange;
+    margin-top: -10px;
+}
+
+/* Testimonials End */
+
+/* Events Start */
+.events{
+    width: 100%;
+    text-align: center;
+    padding: 60px 0 ;
+}
+.events h5{
+    color: gray;
+    font-weight: 300;
+}
+.events h5+h1{
+    color: #2d2d2d;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: -15px;
+    font-family: 'Kalam', cursive;
+}
+.events span{
+    color: rgb(201, 12, 12);
+}
+.events .event-section{
+    width: 85%;
+    margin: 0 auto;
+}
+.events .event-section .event-item{
+    width: 30%;
+    float: left;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+}
+.events .event-section .event-section-1{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/events-1.jpg");
+    margin-right: 15px;
+    margin-left: 25px;
+}
+.events .event-section .event-section-2{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/events-2.jpg");
+    margin-right: 15px;
+}
+.events .event-section .event-section-3{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/events-3.jpg");
+}
+.events .event-section .event-item .content{
+    width: 80%;
+    margin-left: 25px;
+    margin-top: 250px;
+}
+.events .event-section .event-item h1{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+}
+.events .event-section .event-item .num{
+    border-bottom: 2px solid rgb(201, 12, 12);
+    display: inline-block;
+}
+.events .event-section .event-item p{
+    color: lightgray;
+    line-height: 25px;
+    font-size: 0.9rem;
+}
+/* Events End */
+
+/* Chefs Start */
+.chefs{
+    width: 100%;
+    background-color: rgba(228, 228, 228, 0.329);
+    padding-bottom: 80px;
+}
+.chefs .chefs-center{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+.chefs .chefs-center h5{
+    color: gray;
+    font-weight: 300;
+}
+
+.chefs .chefs-center h5+h1{
+    color: #2d2d2d;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 0;
+    font-family: 'Kalam', cursive;
+}
+.chefs .chefs-center span{
+    color: rgb(201, 12, 12);
+}
+.chefs .chefs-center .three-part{
+    width: 100%;
+}
+.chefs .chefs-center .three-part .part-1{
+    width: 30%;
+    background-color: #fff;
+    float: left;
+    border-radius: 5px;
+    transition: all 0.5s;
+    padding-bottom: 15px;
+}
+.chefs .chefs-center .three-part .part-1:hover{
+    transform: scale(1.09);
+}
+.chefs .chefs-center .three-part .one, 
+.chefs .chefs-center .three-part .two{
+    margin-right: 50px;
+}
+.chefs .chefs-center .three-part .one .image{
+    width: 100%;
+    background-image: url("../images/chefs/chefs-1.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding-bottom: 230px;
+}
+.chefs .chefs-center .three-part .two .image{
+    width: 100%;
+    background-image: url("../images/chefs/chefs-2.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding-bottom: 230px;
+}
+.chefs .chefs-center .three-part .three .image{
+    width: 100%;
+    background-image: url("../images/chefs/chefs-3.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding-bottom: 230px;
+}
+.chefs .chefs-center .three-part .part-1 .team-shape{
+    position: relative;
+    top: 250px;
+}
+.chefs .chefs-center .three-part .part-1 .icon{
+    background-color: rgba(223, 219, 219, 0.336);
+    color: rgb(119, 117, 117);
+    width: 5%;
+    padding: 20px 15px;
+    border-radius: 5px;
+    position: relative;
+    top: 30px;
+    left: -50px;
+    visibility: hidden;
+    transition: all 0.8s;
+}
+.chefs .chefs-center .three-part .part-1:hover .icon{
+    left: 0;
+    visibility: visible;
+}
+.chefs .chefs-center .three-part .part-1 .icon i{
+    padding: 10px 0;   
+}
+.chefs .chefs-center .three-part .part-1 h1{
+    color: #2d2d2d;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.chefs .chefs-center .three-part .part-1 h5{
+    color: lightgray;
+    margin-top: 10px;
+}
+.chefs .chefs-center .three-part .part-1 p{
+    color: gray;
+    line-height: 25px;
+    padding: 0 15px;
+}
+/* Chefs End */
+
+/* Booking Start */
+.booking{
+    width: 100%;
+    padding-bottom: 60px;
+}
+.booking .booking-center{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+.booking .booking-center h5{
+    color: gray;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.booking .booking-center h1{
+    color: #2d2d2d;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 5px;
+    font-family: 'Kalam', cursive;
+}
+.booking .booking-center span{
+    color: rgb(201, 12, 12);
+}
+.booking .booking-center .booking-section{
+    width: 100%;
+}
+.booking .booking-center .booking-section .one{
+    width: 30%;
+    float: left;
+    background-image: url("../images/reservation.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 469px
+}
+.booking .booking-center .booking-section .form-part{
+    width: 70%;
+    float: left;
+    background-color: rgba(223, 219, 219, 0.336);
+    padding-bottom: 42px;
+}
+.booking .booking-center .booking-section .form-part form{
+    margin-top: 80px;
+}
+.booking .booking-center .booking-section .form-part input{
+    width: 20%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    border: 1px solid lightgray;
+    outline-color: rgb(201, 12, 12);
+    color: #2d2d2d;
+}
+
+.booking .booking-center .booking-section .form-part .inp{
+    margin-right: 15px;
+}
+.booking .booking-center .booking-section .form-part textarea{
+    width: 76.5%;
+    height: 20vh;
+    padding:10px 10px 0px 20px;
+    margin-left: 78px;
+    display: block;
+    font-size: 1rem;
+    color: #2d2d2d;
+    border: 1px solid lightgray;
+    outline-color: rgb(201, 12, 12);
+}
+.booking .booking-center .booking-section .form-part button{
+    margin-top: 20px;
+    padding: 18px 60px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.booking .booking-center .booking-section .form-part button:hover{
+    background-color: rgb(231, 18, 18);
+    transition: all 0.5s;
+}
+/* Booking End */
+/* Gallery Start */
+.gallery{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(223, 219, 219, 0.336);
+    padding: 60px 0 120px 0;
+}
+.gallery h5{
+    color: gray;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.gallery h1{
+    color: #2d2d2d;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 5px;
+    font-family: 'Kalam', cursive;
+}
+.gallery span{
+    color: rgb(201, 12, 12);
+}
+.gallery .gallery-center{
+    width: 85%;
+    margin: 0 auto;
+}
+.gallery .gallery-center img{
+    width: 20%;
+    border: 3px solid rgb(201, 12, 12);
+}
+.gallery .gallery-center .img1,
+.gallery .gallery-center .img2,
+.gallery .gallery-center .img3,
+.gallery .gallery-center .img5,
+.gallery .gallery-center .img6,
+.gallery .gallery-center .img7{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+/* Gallery End */
+
+/* Contact Start */
+.contact{
+    width: 100%;
+}
+.contact .contact-center{
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.contact .contact-center h6{
+    color: gray;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+.contact .contact-center h6+h1{
+    font-size: 2.5rem;
+    color: #2d2d2d;
+    font-weight: 300;
+    margin: 10px 0 60px 0;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+}
+.contact .contact-center span{
+    color: rgb(201, 12, 12);
+}
+.contact .contact-center .google-map{
+    width: 100%;
+}
+.contact .contact-center .google-map iframe{
+    width: 100%;
+    height: 60vh;
+}
+.contact .contact-center .four-section{
+    width: 100%;
+}
+.contact .contact-center .four-section .one,
+.contact .contact-center .four-section .two,
+.contact .contact-center .four-section .three,
+.contact .contact-center .four-section .four{
+    width: 49%;
+    float: left;
+    background-color: rgba(223, 219, 219, 0.336);
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 20px 0;
+}
+.contact .contact-center .four-section .one,
+.contact .contact-center .four-section .three{
+    margin-right: 22px;
+}
+.contact .contact-center .four-section .one .left,
+.contact .contact-center .four-section .two .left,
+.contact .contact-center .four-section .three .left,
+.contact .contact-center .four-section .four .left{
+    width: 25%;
+    float: left;
+}
+.contact .contact-center .four-section .one .right,
+.contact .contact-center .four-section .two .right,
+.contact .contact-center .four-section .three .right,
+.contact .contact-center .four-section .four .right{
+    width: 60%;
+    float: left;
+    margin-top: -20px;
+    margin-left: -40px;
+}
+.contact .contact-center .four-section .left span{
+    background-color: rgb(201, 12, 12);
+    color: #fff;
+    border-radius: 100%;
+    padding: 15px 16px;
+    font-size: 1.5rem;
+    position: relative;
+    top: 35px;
+    left: 10px;
+}
+.contact .contact-center .four-section .right h1{
+    color: gray;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.contact .contact-center .four-section .right p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #2d2d2d;
+    margin-top: 10px;
+}
+.contact .contact-center .four-section .right p span{
+    color: #2d2d2d;
+    font-weight: 700;
+}
+.contact .contact-center form{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 gray;
+    padding: 30px 0;
+    margin-top: 20px;
+}
+.contact .contact-center form .name,
+.contact .contact-center form .email{
+    width: 43%;
+    padding: 15px 10px;
+    margin-left: 20px;
+}
+
+.contact .contact-center form .name{
+    margin-left: 35px;
+}
+.contact .contact-center form .subject{
+    width: 90.9%;
+    padding: 15px 0 15px 10px;
+    margin-left: 35px;
+    text-align: left;
+    margin-top: 20px;
+}
+.contact .contact-center form input{
+    color: #2d2d2d;
+    border: 1px solid lightgray;
+    outline-color: rgb(201, 12, 12);
+    
+}
+
+.contact .contact-center form textarea{
+    width: 90.9%;
+    height: 20vh;
+    margin-top: 20px;
+    margin-left: 35px;
+    padding: 10px 2px 10px 8px;
+    color: #2d2d2d;
+    border: 1px solid lightgray;
+    outline-color: rgb(201, 12, 12);
+}
+.contact .contact-center form button{
+    margin-left: 40%;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+.contact .contact-center form button:hover{
+    background-color: rgb(231, 18, 18);
+    transition: all 0.5s;
+}
+/* Contact End */
+
+/* Footer Start */
+footer{
+    width: 100%;
+    background-color: #1f1f24;
+    color: #fff;
+    padding-bottom: 80px;
+}
+footer .footer-center{
+    width: 85%;
+    margin: 0 auto;
+}
+footer .footer-center .four-part{
+    width: 100%;
+    border-bottom: 1px solid #555454;
+    padding: 35px 0;
+}
+footer .footer-center .four-part .one,
+footer .footer-center .four-part .two,
+footer .footer-center .four-part .three,
+footer .footer-center .four-part .four{
+    width: 22%;
+    float: left;
+}
+footer .footer-center .four-part .one,
+footer .footer-center .four-part .two,
+footer .footer-center .four-part .three{
+    margin-right: 45px;
+}
+footer .footer-center .four-part .one .icon,
+footer .footer-center .four-part .two .icon,
+footer .footer-center .four-part .three .icon{
+    width: 10%;
+    float: left;
+    margin-top: 22px;
+    margin-right: 20px;
+}
+footer .footer-center .four-part .one span,
+footer .footer-center .four-part .two span,
+footer .footer-center .four-part .three span{
+    font-size: 1.5rem;
+    color: lightgray;
+}
+footer .footer-center .four-part .one .text,
+footer .footer-center .four-part .two .text,
+footer .footer-center .four-part .three .text{
+    width: 80%;
+    float: left;
+    margin-top: 5px;
+}
+footer .footer-center .four-part .one .text h1,
+footer .footer-center .four-part .two .text h1,
+footer .footer-center .four-part .three .text h1,
+footer .footer-center .four-part .four h1{
+    letter-spacing: 1.5px;
+}
+footer .footer-center .four-part .one .text p,
+footer .footer-center .four-part .two .text p,
+footer .footer-center .four-part .three .text p{
+    color: lightgray;
+    font-weight: 300;
+    margin:0 0 5px 0;
+    font-size: 0.9rem;
+}
+footer .footer-center .four-part .text span{
+    font-size: 0.9rem;
+    font-weight: 700;
+} 
+footer .footer-center .four-part .four span{
+    font-size: 1rem;
+    border: 1px solid #555454;
+    border-radius: 100%;
+    color: rgb(177, 177, 177);
+    margin-right: 6px;
+}
+footer .footer-center .four-part .four .fa-twitter,
+footer .footer-center .four-part .four .fa-instagram,
+footer .footer-center .four-part .four .fa-linkedin-square,
+footer .footer-center .four-part .four .bi-facebook{
+    padding: 10px 11px 10px 11px;
+}
+footer .footer-center .four-part .four span:hover{
+    border-color: #fff;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+footer .footer-center .four-part + p,
+footer .footer-center .four-part + p + p{
+    text-align: center;
+    color: rgb(177, 177, 177);
+    font-size: 0.9rem;
+    margin: 30px 0 -25px 0;
+}
+footer .footer-center .four-part + p span{
+    font-weight: 700;
+}
+footer .footer-center .four-part + p + p span{
+    color: #fff;
+}
+/* Footer End */

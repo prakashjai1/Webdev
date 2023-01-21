@@ -1,0 +1,854 @@
+/* Device responsive 1440px above */
+@media only screen and (min-width:1441px) {
+    header nav{
+        width: 55%;
+    }
+     header nav .brand{
+        margin-right: 5%;
+    }
+    header nav ul li .main-menu .sub-menu{
+        width: 6%;
+    }
+   
+    .home .two-part{
+        width: 55%;
+    }
+    .about-center{
+        width: 55%;
+    }
+    .about .about-center .about-twopart .two img{
+        margin-top: 83px;
+    }
+    .choose-center{
+        width: 55%;
+    }
+    .choose .choose-center .one{
+        padding: 15px 0 25px 0;
+    }
+    .choose .choose-center .two,
+    .choose .choose-center .three,
+    .choose .choose-center .four{
+        padding: 40px 0 40px 0;
+        margin-top: 30px;
+    }
+    .details-center{
+        width: 50%;
+    }
+    .menu-center{
+        width: 55%;
+    }
+    .testimonials .testimonials-center{
+        width: 45%;
+    }
+    .events .event-section .event-item{
+        width: 30.8%;
+        padding-top: 350px;
+    }
+    .events .event-section .event-item-1,
+    .events .event-section .event-item-2{
+        margin-right: 50px;
+    }
+    .chefs .chefs-center{
+        width: 55%;
+    }
+    .booking .booking-center{
+        width: 55%;
+    }
+    .booking .booking-center .booking-section .one{
+        padding: 268px 0;
+    }
+    .booking .booking-center .booking-section .form-part{
+        padding: 83px 0;
+    }
+    .booking .booking-center .booking-section .form-part textarea{
+        width: 73.5%;
+        margin-left: 114px;
+    }
+    .gallery .gallery-center{
+        width: 55%;
+    }
+    .contact .contact-center{
+        width: 55%;
+    }
+    .contact .contact-center form .email{
+        margin-left: 35px;
+    }
+    footer .footer-center{
+        width: 55%;
+    }
+}
+/* Device responsive 1440px above */
+
+/* Device responsive 1300px less */
+   @media only screen and (max-width:1300px){
+        header nav .nav-menu{
+            display: block;
+        }
+        header nav button{
+            margin-right: 40%;
+        }
+        header nav .toggle-nav{
+            display: block;
+            margin-left: 100%;
+            margin-top: -30px;
+        }
+        header nav .nav-menu{
+            position: absolute;
+            width: 50%;
+            background-color: #fff;
+            padding: 20px 0 10px 3px;
+            top: -8px;
+            left: 96%;
+        }
+        
+        header nav .nav-menu li{
+            display: block;
+        }
+        header nav ul li{
+            padding: 10px 0;
+        }
+        header nav ul li .main-menu .sub-menu{
+            width: 40%;
+            margin-left: 120px;
+            margin-top: -288px;
+        }
+        header nav ul li:hover .main-menu ul{
+                display: none;
+        }
+        header nav .fa-close{
+            margin-left: 90%;
+        }
+    
+        header nav ul li .sub-menu li:hover a{
+            color:#000;
+        }
+        header nav ul .border-hover:hover::after{
+            width: 0%;
+        }
+        header nav ul li .main-menu .sub-menu li{
+            line-height: 25px;
+        }
+        header nav ul li .main-menu li:hover .main-sub-menu ul{
+            display: none;
+        }
+        header nav ul li .sub-menu li:hover  ul li a{
+            color: gray;
+        }
+        header nav ul li .sub-menu li .sub-menu2 li:hover a{
+            color: #000;
+        }
+        
+   }
+   
+/* Device responsive 1300px less */ 
+
+/* Device responsive 1024px less  */
+@media only screen and (max-width:1024px){
+    header nav ul li .main-menu .sub-menu{
+        width: 30%;
+        margin-left: 107px;
+        margin-top: -250px;
+    }
+   
+    .about-center{
+        width: 90%;
+    }
+    .about .about-center .about-twopart .two img{
+        top: 18px; 
+    }
+    .about .about-center .about-twopart .two a {
+        top: -150px;
+        left: 165px;
+    }
+    .choose-center{
+        width: 90%;
+    }
+    .choose .choose-center .one{
+        width: 35%;
+    }
+    .choose .choose-center .two{
+        margin-top: 0;
+    }
+    .choose .choose-center .two,
+    .choose .choose-center .three,
+    .choose .choose-center .four{
+        width: 55%;
+        padding: 30px 0 30px 0;
+    }
+    .choose .choose-center .four{
+        margin-left: 38.3%;
+    }
+    .testimonials .testimonials-center{
+        width: 75%;
+    }
+    .testimonials .testimonials-center .testimonials-item .item{
+        margin-left: 0;
+    }
+    .events .event-section .event-item{
+        width: 97%;
+        margin-bottom: 20px;
+    }
+    .events .event-section .event-section-1,
+    .events .event-section .event-section-2,
+    .events .event-section .event-section-3{
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    .chefs .chefs-center{
+        width: 90%;
+    }
+    .chefs .chefs-center .three-part .part-1{
+        width: 31%;
+    }
+    .chefs .chefs-center .three-part .one, 
+    .chefs .chefs-center .three-part .two{
+        margin-right: 31px;
+    }
+    .chefs .chefs-center .three-part .one .image,
+    .chefs .chefs-center .three-part .two .image,
+    .chefs .chefs-center .three-part .three .image{
+        padding-bottom: 230px;
+    }
+    
+    .booking .booking-center{
+        width: 90%;
+    }
+    .booking .booking-center .booking-section .one{
+        padding: 240px 0 ;
+    }
+    .booking .booking-center .booking-section .form-part {
+        padding: 54px 0;
+    }
+    .booking .booking-center .booking-section .form-part textarea{
+        margin-left: 45px;
+        width: 80.9%;
+    }
+    .contact .contact-center{
+        width: 90%;
+    }
+    .contact .contact-center .four-section .one,
+    .contact .contact-center .four-section .two,
+    .contact .contact-center .four-section .three,
+    .contact .contact-center .four-section .four{
+        width: 49%;
+    }
+    .contact .contact-center .four-section .one,
+    .contact .contact-center .four-section .three{
+        margin-right: 15px;
+    }
+    .contact .contact-center .four-section .one .right,
+    .contact .contact-center .four-section .two .right,
+    .contact .contact-center .four-section .three .right,
+    .contact .contact-center .four-section .four .right{
+        width: 75%;
+    }
+    .contact .contact-center form .name,
+    .contact .contact-center form .email{
+        width: 42.3%;
+    }
+    footer .footer-center{
+        width: 90%;
+    }
+    footer .footer-center .four-part .one,
+    footer .footer-center .four-part .two,
+    footer .footer-center .four-part .three,
+    footer .footer-center .four-part .four{
+        width: 24%;
+    }
+    footer .footer-center .four-part .one,
+    footer .footer-center .four-part .two,
+    footer .footer-center .four-part .three{
+        margin-right: 10px;
+    }
+}
+/* Device responsive 1024px less  */
+
+/* Device responsive 768px less  */
+@media only screen and (max-width:768px){
+    /* Header */
+    header nav ul li .main-menu .sub-menu{
+        width: 40%;
+        margin-left: -270px;
+    }
+    header nav ul li .main-menu .sub-menu .main-sub-menu .sub-menu2{
+        margin-top: -16px;
+        margin-left: 75%;
+    }
+    /* Header */
+    
+    /* Home */
+    .home .two-part .home-part-1,
+    .home .two-part .home-part-2{
+        width: 100%;
+        clear: both;
+        text-align: center;
+    }
+    .home .two-part .home-part-2 img{
+        margin: 0;
+    }
+    .about .about-center .about-twopart .one,
+    .about .about-center .about-twopart .two{
+        width: 100%;
+        clear: both;
+    }
+    .about .about-center .about-twopart .one{
+        padding:120px 0 500px 0;
+    }
+    .about .about-center .about-twopart .two a{
+        top: -245px;
+        left: 310px;
+    }
+    /* Home */
+
+    /* Choose */
+    .choose .choose-center .one,
+    .choose .choose-center .two,
+    .choose .choose-center .three,
+    .choose .choose-center .four{
+        width: 100%;
+        clear: both;
+        margin-top: 20px;
+    }
+    .choose .choose-center .one button{
+        margin-left: 38%;
+    }
+    .choose .choose-center .four{
+        margin-left: 0;
+    }
+    .choose .choose-center .two:hover,
+    .choose .choose-center .three:hover,
+    .choose .choose-center .four:hover{
+    transform: scale(1);
+    }
+    /* Choose */
+
+    /* Details */
+    .details .details-center .one,
+    .details .details-center .two,
+    .details .details-center .three,
+    .details .details-center .four{
+        width: 50%;
+    }
+    /* Details */
+
+    /* Menu */
+    .menu .menu-center .one,
+    .menu .menu-center .two,
+    .menu .menu-center .three{
+        width: 100%;
+        clear: both;
+        margin-top: 25px;
+    }
+    .menu .menu-center .one img,
+    .menu .menu-center .two img,
+    .menu .menu-center .three img{
+        width: 85%;
+    }
+    .menu .menu-center .four-item img{
+        margin-bottom: -50px;
+    }
+    .menu .menu-center .one-item,
+    .menu .menu-center .two-item,
+    .menu .menu-center .three-item,
+    .menu .menu-center .four-item,
+    .menu .menu-center .five-item,
+    .menu .menu-center .six-item{
+        margin-bottom: 50px;
+    }
+    /* Menu */
+
+    /* Testimonials */
+    .testimonials .testimonials-center .testimonials-item .item .part-one,
+    .testimonials .testimonials-center .testimonials-item .item .part-two{
+        width: 100%;
+        clear: both;
+    }
+    .testimonials .testimonials-center .testimonials-item .item .part-two{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .testimonials .testimonials-center .testimonials-item .item .part-two img{
+        width: 75%;
+        text-align: center;
+    }
+    /* Testimonials */
+
+    /* Events */
+    .events .event-section .event-item{
+        width: 96%;
+    }
+    /* Events */
+
+    /* Chefs */
+    .chefs .chefs-center .three-part .one, 
+    .chefs .chefs-center .three-part .two,
+    .chefs .chefs-center .three-part .three{
+        width: 46%;
+    }
+    .chefs .chefs-center .three-part .one{
+        margin-right: 50px;
+    }
+    .chefs .chefs-center .three-part .two{
+        margin-right: 0;
+    }
+    .chefs .chefs-center .three-part .three{
+        margin-top: 20px;
+    }
+    /* Chefs */
+
+    /* Booking */
+    .booking .booking-center .booking-section .one,
+    .booking .booking-center .booking-section .form-part{
+        width: 100%;
+        clear: both;
+    }
+    .booking .booking-center .booking-section .one {
+        padding: 0px 0 730px 0;
+        margin-bottom: 20px;
+    }
+    .booking .booking-center .booking-section .form-part input{
+        width: 35%;
+        height: 8vh;
+    }
+    .booking .booking-center .booking-section .form-part #left-margin{
+        margin-left: 10px;
+    }
+    .booking .booking-center .booking-section .form-part .inp{
+        margin-right: 0px;
+    }
+    .booking .booking-center .booking-section .form-part textarea{
+        width: 80%;
+        height: 25vh;
+        margin-left: 52px;
+    }
+    /* Booking */
+
+    /* Gallery */
+    .gallery .gallery-center img{
+        width: 40%;
+    }
+    .gallery .gallery-center .img2,
+    .gallery .gallery-center .img6{
+        margin: 10px 0 0 0;
+    }
+    .gallery .gallery-center .img1,
+    .gallery .gallery-center .img3,
+    .gallery .gallery-center .img5,
+    .gallery .gallery-center .img7{
+        margin: 10 10px 10px 0;
+    }
+    /* Gallery */
+
+    /* Contact */
+    .contact .contact-center .four-section .one,
+    .contact .contact-center .four-section .two,
+    .contact .contact-center .four-section .three,
+    .contact .contact-center .four-section .four{
+       width: 47.9%;
+    }
+    .contact .contact-center .four-section .two,
+    .contact .contact-center .four-section .three{
+        padding: 28px 0 25px 0;
+    }
+    .contact .contact-center .four-section .one,
+    .contact .contact-center .four-section .three{
+        margin-right: 28px;
+    }
+    .contact .contact-center .four-section .one .left,
+    .contact .contact-center .four-section .two .left,
+    .contact .contact-center .four-section .three .left,
+    .contact .contact-center .four-section .four .left{
+        width: 5%;
+        margin-top: -20px;
+        margin-left: 6px;
+    }
+    .contact .contact-center .four-section .one .right,
+    .contact .contact-center .four-section .two .right,
+    .contact .contact-center .four-section .three .right,
+    .contact .contact-center .four-section .four .right{
+        margin-left: 80px;
+        width: 70%;
+        margin-top: -50px;
+    }
+    .contact .contact-center .four-section .right p{
+        font-size: 0.8rem;
+    }
+    .contact .contact-center form .name,
+    .contact .contact-center form .email{
+        width: 88%;
+        margin-left: 35px;
+    }
+    .contact .contact-center form .email{
+        margin-top: 20px;
+    }
+    .contact .contact-center form .subject,
+    .contact .contact-center form textarea{
+        width: 89.6%;
+    }
+    /* Contact */
+
+    /* Footer */
+    footer .footer-center .four-part .one,
+    footer .footer-center .four-part .two,
+    footer .footer-center .four-part .three,
+    footer .footer-center .four-part .four{
+        width: 40%;
+        margin-bottom: 10px
+    }
+    footer .footer-center .four-part .one,
+    footer .footer-center .four-part .three{
+        margin-right: 80px;
+    }
+    /* Footer */
+}
+/* Device responsive 768px less  */
+
+/* Device responsive 425px less  */
+@media only screen and (max-width:425px){
+    /* Header */
+    header nav button {
+        margin-right: 3%;
+    }
+    header nav .fa-close{
+        margin-left: 80%;
+    }
+    header nav ul li a{
+        color:gray;
+    }
+    header nav ul li .sub-menu li a:hover{
+        color:#000;
+    }
+    header nav ul li .main-menu .sub-menu {
+        width: 60%;
+        margin-left: -230px;
+    }
+    header nav ul li .main-menu .sub-menu .main-sub-menu .sub-menu2{
+        margin-top: -16px;
+        margin-left: 66%;
+        width: 52%;
+    }
+    header nav ul li .main-menu .sub-menu2 li {
+        margin-left: -26px;
+        line-height: 16px;
+    }
+    /* Header */
+
+    /* Home */
+    .home .two-part .home-part-1 a {
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+    .home .two-part .home-part-1 button {
+        padding: 14px 34px;
+    }
+    .home .two-part .home-part-2 img {
+        width: 100%;
+    }
+    /* Home */
+
+    /* About */
+    .about .about-center .about-twopart .one {
+        padding: 80px 0 260px 0;
+    }
+    .about .about-center .about-twopart .one .white-box {
+        top: 200px;
+    }
+    .about .about-center .about-twopart .two a {
+        top: -140px;
+        left: 140px;
+    }
+    /* About */
+
+    /* Choose */
+    .choose .choose-center .one button {
+        margin-left: 30%;
+    }
+    /* Choose */
+
+    /* Details */
+    .details .details-center .one, 
+    .details .details-center .two, 
+    .details .details-center .three, 
+    .details .details-center .four {
+        width: 100%;
+    }
+    /* Details */
+
+    /* Our Menu */
+    .menu .menu-center a{
+        font-size: 1rem;
+    }
+    .menu .menu-center .mrg-right{
+        margin-right: 15px;
+    }
+    /* Our Menu */
+
+    /* Testimonials */
+    .testimonials .testimonials-center{
+        width: 80%;
+    }
+    .testimonials .testimonials-center .testimonials-item .item .part-one{
+        width: 100%;
+    }
+    .testimonials .testimonials-center .testimonials-item .item p
+    {
+        padding: 0 10px;
+        margin-top: 0;
+    }
+    .testimonials .testimonials-center .testimonials-item .item h1,
+    .testimonials .testimonials-center .testimonials-item .item .space-left{
+        padding-left: 10px;
+    }
+    .testimonials .testimonials-center .testimonials-item .item .part-two img {
+        width: 100%;
+    }
+    /* Testimonials */
+
+    /* Events */
+    .events .event-section{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .events .event-section .event-item{
+        width: 100%;
+        padding-left: 0;
+    }
+    .events .event-section .event-section-1,
+    .events .event-section .event-section-2,
+    .events .event-section .event-section-3{
+        margin-left: 0;
+    }
+    .events .event-section .event-item .content {
+        margin-left: 0px;
+    }
+    .events .event-section .event-item h1,
+    .events .event-section .event-item p{
+        margin-left: 20px;
+    }
+    /* Events */
+
+    /* Chefs */
+    .chefs .chefs-center .three-part .one, 
+    .chefs .chefs-center .three-part .two, 
+    .chefs .chefs-center .three-part .three{
+        width: 100%;
+        margin-top: 18px;
+    }
+    /* Chefs */
+
+    /* Booking */
+    .booking .booking-center .booking-section .one {
+        padding: 0px 0 500px 0;
+    }
+    .booking .booking-center .booking-section .form-part input {
+        width: 80%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .booking .booking-center .booking-section .form-part #left-margin {
+         margin-left: 0px; 
+    }
+    .booking .booking-center .booking-section .form-part textarea {
+        margin-left: 15px;
+        width: 83%;
+    }
+    /* Booking */
+
+    /* Gallery */
+    .gallery .gallery-center img {
+        width: 100%;
+    }
+    .gallery .gallery-center .img1,
+    .gallery .gallery-center .img2, 
+    .gallery .gallery-center .img3,
+    .gallery .gallery-center .img4,
+    .gallery .gallery-center .img5,
+    .gallery .gallery-center .img6,  
+    .gallery .gallery-center .img7,
+    .gallery .gallery-center .img8{
+        margin: 0 0 10px 0;
+    }
+    /* Gallery */
+
+    /* Contact */
+    .contact .contact-center .four-section .one,
+    .contact .contact-center .four-section .two, 
+    .contact .contact-center .four-section .three, 
+    .contact .contact-center .four-section .four{
+        width: 100%;
+    }
+    .contact .contact-center form .name, 
+    .contact .contact-center form .email{
+        width: 86%;
+        margin-left: 15px;
+    }
+    .contact .contact-center form .subject{
+        width: 88.9%;
+        margin-left: 15px;
+    }
+    .contact .contact-center form textarea{
+        margin-left: 15px;
+    }
+    .contact .contact-center form button{
+        margin-left: 80px;
+    }
+    /* Contact */
+
+    /* Footer */
+    footer .footer-center .four-part .one, 
+    footer .footer-center .four-part .two, 
+    footer .footer-center .four-part .three, 
+    footer .footer-center .four-part .four{
+        width: 100%;
+    }
+    /* Footer */
+}
+/* Device responsive 425px less  */
+
+/* Device responsive 375px less  */
+@media only screen and (max-width:375px){
+    /* Header */
+    header nav ul li .main-menu .sub-menu {
+        width: 50%;
+        margin-left: -204px;
+        margin-top: -210px;
+    }   
+    header nav ul li .main-menu .sub-menu .main-sub-menu .sub-menu2 {
+        margin-top: -101px;
+        margin-left: 56%;
+        width: 57%;
+    }
+    header nav ul li .main-menu .sub-menu2 li{
+        margin-left: -35px;
+    }
+    /* Header */
+    
+    /* Home */
+    .home .two-part .home-part-1 a {
+        font-size: 0.8rem;
+    }
+    .home .two-part .home-part-1 button {
+        padding: 10px 20px;
+        margin-left: -2px;
+    }
+    /* Home */
+
+    /* About */
+    .about .about-center .about-twopart .two a {
+        top: -128px;
+        left: 128px;
+    }
+    /* About */
+    /* Menu */
+    .menu .menu-center a{
+        padding: 0 0px 10px 0px;
+    }
+    /* Menu */
+    
+    /* Booking */
+    .booking .booking-center .booking-section .form-part textarea{
+        margin-left: 10px;
+        width: 83.5%;
+    }
+    /* Booking */
+
+    /* Contact */
+    .contact .contact-center form .subject, .contact .contact-center form textarea{
+        width: 88.7%;
+    }
+    .contact .contact-center form button{
+        margin-left: 62px;
+    }
+    /* Contact */
+}
+/* Device responsive 375px less  */
+
+/* Device responsive 320px less  */
+@media only screen and (max-width:320px){
+    /* Header */
+    header nav .mybutton{
+        padding: 10px 7px;
+    }
+    header nav ul li .main-menu .sub-menu {
+        width: 44%;
+        margin-left: -174px;
+        margin-top: -225px;
+    }
+    header nav ul li .main-menu .sub-menu li {
+        line-height: 17px;
+        margin-left: -31px;
+    }
+    header nav ul .sub-menu a {
+        font-size: 0.8rem;
+    }
+    header nav ul li .main-menu .sub-menu .main-sub-menu .sub-menu2 {
+        margin-top: -101px;
+        margin-left: 52%;
+        width: 50%;
+    }
+    /* Header */
+
+    /* Home */
+    .home .two-part .home-part-1 button{
+        padding: 8px 13px;
+    }
+    .home .two-part .home-part-1 a{
+        font-size: 0.7rem;
+    }
+    /* Home */
+
+    /* About */
+    .about .about-center .about-twopart .two a{
+        top: -105px;
+        left: 105px;
+    }
+    /* About */
+
+    /* Choose */
+    .choose .choose-center .one button{
+        margin-left: 22%;
+    }
+    /* Choose */
+
+    /* Menu */
+    .menu .menu-center .show-4{
+        line-height: 60px;
+    }
+    /* Menu */
+
+    /* Booking */
+    .booking .booking-center .booking-section .form-part input{
+        width: 72%;     
+    }
+    .booking .booking-center .booking-section .form-part textarea{
+        margin-left: 17px;
+        width: 76%;
+    }
+    .booking .booking-center .booking-section .form-part button{
+        padding: 18px 50px;     
+    }
+    /* Booking */
+
+    /* Contact */
+    .contact .contact-center .four-section .right p{
+        padding: 0 5px;
+    }
+    .contact .contact-center form .name, .contact .contact-center form .email{
+        width: 81%;
+    }
+    .contact .contact-center form .subject, .contact .contact-center form textarea{
+        width: 84.5%;
+    }
+    .contact .contact-center form button{
+        margin-left: 36px;
+    }
+    /* Contact */
+
+    /* Testimonials */
+    .testimonials .testimonials-center .testimonials-item{
+        width: 99%;
+    }
+    /* Testimonials */
+}
+/* Device responsive 320px less  */
+
