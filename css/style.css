@@ -24,6 +24,7 @@ html{
     border-radius: 25px;
     border: none;
     padding: 10px 20px;
+    cursor: pointer;
 }
 /* Header Start */
 header{

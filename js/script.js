@@ -83,3 +83,8 @@ jQuery(function(){
             jQuery(".sub-menu2").slideToggle();
         });
     });
+
+// Book a table
+function booktable(){
+    alert("Thank you for booking a table!");
+}

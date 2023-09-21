@@ -532,13 +532,13 @@
             <section class="booking-section">
                 <section class="one"></section>
                 <section class="form-part">
-                    <form action="#">
-                        <input type="text" placeholder="Your Name" class="inp" >
-                        <input type="email" placeholder="Your Email" class="inp" id="left-margin">
-                        <input type="text" placeholder="Your Phone">
-                        <input type="text" placeholder="Date" class="inp" id="left-margin">
-                        <input type="text" placeholder="Time" class="inp">
-                        <input type="number" placeholder="# of people" id="left-margin">
+                    <form action="index.html" onsubmit="booktable()">
+                        <input type="text" placeholder="Your Name" class="inp" required>
+                        <input type="email" placeholder="Your Email" class="inp" id="left-margin" required>
+                        <input type="number" placeholder="Your Phone" required>
+                        <input type="date" placeholder="Date" class="inp" id="left-margin" required>
+                        <input type="time" placeholder="Time" class="inp" required>
+                        <input type="number" placeholder="# of people" id="left-margin" required>
                         <textarea placeholder="Message"></textarea>
                         <button class="mybutton">Book a Table</button>
                     </form>
@@ -616,7 +616,7 @@
             </section>
             <form action="#">
                 <input type="text" placeholder="Your Name" class="name">
-                <input type="text" placeholder="Your Email" class="email">
+                <input type="email" placeholder="Your Email" class="email">
                 <input type="text" placeholder="Subject" class="subject">
                 <textarea name="message" placeholder="Message"></textarea>
                 <button class="mybutton">Send Message</button>
